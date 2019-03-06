@@ -18,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		222E15E84641DF52C8BF63B2 /* Pods-RxSwiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest.release.xcconfig"; sourceTree = "<group>"; };
+		AF0C9BA4223033D200232903 /* 5. Disposing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "5. Disposing.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF0C9BA622303F9600232903 /* 3. Observable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "3. Observable.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF197DA0222D367F00794D97 /* RxSwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF197DA3222D367F00794D97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF197DA5222D367F00794D97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,7 +28,8 @@
 		AF197DAD222D368200794D97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF197DB0222D368200794D97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF197DB2222D368200794D97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF197DB8222D39AF00794D97 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF197DB8222D39AF00794D97 /* 4. Subscriber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "4. Subscriber.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF2BB8882230420F00608094 /* 6. Side Effects.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "6. Side Effects.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C050614BC33C2E029354F754 /* Pods-RxSwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
 		FC511C6D31A9B472644C552E /* Pods_RxSwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -81,7 +84,10 @@
 		AF197DA2222D367F00794D97 /* RxSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
-				AF197DB8222D39AF00794D97 /* MyPlayground.playground */,
+				AF2BB8882230420F00608094 /* 6. Side Effects.playground */,
+				AF0C9BA4223033D200232903 /* 5. Disposing.playground */,
+				AF197DB8222D39AF00794D97 /* 4. Subscriber.playground */,
+				AF0C9BA622303F9600232903 /* 3. Observable.playground */,
 				AF197DA3222D367F00794D97 /* AppDelegate.swift */,
 				AF197DA5222D367F00794D97 /* ViewController.swift */,
 				AF197DA7222D367F00794D97 /* Main.storyboard */,
