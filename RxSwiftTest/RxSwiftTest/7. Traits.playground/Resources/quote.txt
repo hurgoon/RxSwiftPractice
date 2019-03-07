@@ -1,0 +1,3 @@
+The length of path between two nodes is represented by the number of edges between them.
+
+두 노드 사이의 경로 길이는 노드 사이의 에지 수로 표시됩니다.
