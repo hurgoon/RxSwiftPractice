@@ -31,6 +31,7 @@
 		AF197DB8222D39AF00794D97 /* 4. Subscriber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "4. Subscriber.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF2BB8882230420F00608094 /* 6. Side Effects.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "6. Side Effects.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF2BB8892231146C00608094 /* 7. Traits.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "7. Traits.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AFEF3DDB2232B5E200D37592 /* 8. Publish Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "8. Publish Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C050614BC33C2E029354F754 /* Pods-RxSwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
 		FC511C6D31A9B472644C552E /* Pods_RxSwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -85,6 +86,7 @@
 		AF197DA2222D367F00794D97 /* RxSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				AFEF3DDB2232B5E200D37592 /* 8. Publish Subject.playground */,
 				AF2BB8892231146C00608094 /* 7. Traits.playground */,
 				AF2BB8882230420F00608094 /* 6. Side Effects.playground */,
 				AF0C9BA4223033D200232903 /* 5. Disposing.playground */,
