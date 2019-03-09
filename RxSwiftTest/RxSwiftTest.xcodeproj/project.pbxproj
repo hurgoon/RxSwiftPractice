@@ -18,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		222E15E84641DF52C8BF63B2 /* Pods-RxSwiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest.release.xcconfig"; sourceTree = "<group>"; };
+		AF095DD9223401FF00584545 /* 9. Behavior Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "9. Behavior Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF0C9BA4223033D200232903 /* 5. Disposing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "5. Disposing.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF0C9BA622303F9600232903 /* 3. Observable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "3. Observable.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF197DA0222D367F00794D97 /* RxSwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +87,7 @@
 		AF197DA2222D367F00794D97 /* RxSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				AF095DD9223401FF00584545 /* 9. Behavior Subject.playground */,
 				AFEF3DDB2232B5E200D37592 /* 8. Publish Subject.playground */,
 				AF2BB8892231146C00608094 /* 7. Traits.playground */,
 				AF2BB8882230420F00608094 /* 6. Side Effects.playground */,
