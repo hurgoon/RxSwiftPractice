@@ -30,6 +30,7 @@
 		AF197DB0222D368200794D97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF197DB2222D368200794D97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF197DB8222D39AF00794D97 /* 4. Subscriber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "4. Subscriber.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF26165522353A56008F292C /* 10. Replay Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "10. Replay Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF2BB8882230420F00608094 /* 6. Side Effects.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "6. Side Effects.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF2BB8892231146C00608094 /* 7. Traits.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "7. Traits.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AFEF3DDB2232B5E200D37592 /* 8. Publish Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "8. Publish Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -87,6 +88,7 @@
 		AF197DA2222D367F00794D97 /* RxSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				AF26165522353A56008F292C /* 10. Replay Subject.playground */,
 				AF095DD9223401FF00584545 /* 9. Behavior Subject.playground */,
 				AFEF3DDB2232B5E200D37592 /* 8. Publish Subject.playground */,
 				AF2BB8892231146C00608094 /* 7. Traits.playground */,
