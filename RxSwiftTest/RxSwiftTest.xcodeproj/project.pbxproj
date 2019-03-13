@@ -15,6 +15,7 @@
 		AF197DAE222D368200794D97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF197DAD222D368200794D97 /* Assets.xcassets */; };
 		AF197DB1222D368200794D97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF197DAF222D368200794D97 /* LaunchScreen.storyboard */; };
 		AF5E5EC52238139500C038D3 /* SubjectInPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E5EC42238139500C038D3 /* SubjectInPracticeViewController.swift */; };
+		AFFE219722394BD200553BFD /* ImageLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE219622394BD200553BFD /* ImageLoaderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		AF5E5EC22237EF2200C038D3 /* 12. Relay.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "12. Relay.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF5E5EC42238139500C038D3 /* SubjectInPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectInPracticeViewController.swift; sourceTree = "<group>"; };
 		AFEF3DDB2232B5E200D37592 /* 8. Publish Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "8. Publish Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AFFE219522393D7F00553BFD /* 14. Ignore Operator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "14. Ignore Operator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AFFE219622394BD200553BFD /* ImageLoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderViewController.swift; sourceTree = "<group>"; };
 		C050614BC33C2E029354F754 /* Pods-RxSwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
 		FC511C6D31A9B472644C552E /* Pods_RxSwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -92,6 +95,7 @@
 		AF197DA2222D367F00794D97 /* RxSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				AFFE219522393D7F00553BFD /* 14. Ignore Operator.playground */,
 				AF5E5EC22237EF2200C038D3 /* 12. Relay.playground */,
 				AF5E5E752236ACA200C038D3 /* 11. Async Subject.playground */,
 				AF26165522353A56008F292C /* 10. Replay Subject.playground */,
@@ -103,9 +107,10 @@
 				AF197DB8222D39AF00794D97 /* 4. Subscriber.playground */,
 				AF0C9BA622303F9600232903 /* 3. Observable.playground */,
 				AF197DA3222D367F00794D97 /* AppDelegate.swift */,
+				AF197DA7222D367F00794D97 /* Main.storyboard */,
 				AF197DA5222D367F00794D97 /* ViewController.swift */,
 				AF5E5EC42238139500C038D3 /* SubjectInPracticeViewController.swift */,
-				AF197DA7222D367F00794D97 /* Main.storyboard */,
+				AFFE219622394BD200553BFD /* ImageLoaderViewController.swift */,
 				AF197DAD222D368200794D97 /* Assets.xcassets */,
 				AF197DAF222D368200794D97 /* LaunchScreen.storyboard */,
 				AF197DB2222D368200794D97 /* Info.plist */,
@@ -242,6 +247,7 @@
 				AF5E5EC52238139500C038D3 /* SubjectInPracticeViewController.swift in Sources */,
 				AF197DA4222D367F00794D97 /* AppDelegate.swift in Sources */,
 				AF197DAC222D367F00794D97 /* RxSwiftTest.xcdatamodeld in Sources */,
+				AFFE219722394BD200553BFD /* ImageLoaderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

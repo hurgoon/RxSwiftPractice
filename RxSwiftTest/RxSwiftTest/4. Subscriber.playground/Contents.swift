@@ -5,13 +5,15 @@ import RxSwift
 let multiObserver = Observable.of(1, 2, 3, 4)
 
 multiObserver.subscribe { (event) in
-    print(event.element ?? event)  // 기본은 옵셔널. event.element가 nil이면 event(complete)가 출력됨
+    print("''event.element ?? event''", event.element ?? event)  // 기본은 옵셔널. event.element가 nil이면 event(complete)가 출력됨
 }
 
 // Subscribe, onNext, onComplete
-multiObserver.subscribe(onNext: { (element) in
-    print(element)
-}, onError: nil, onCompleted: { print("Muti is Completed")}, onDisposed: nil) // complete시 액션 지정 가능
+multiObserver.subscribe(
+    onNext: { (element) in print(element) },
+    onError: nil,
+    onCompleted: { print("Muti is Completed")},
+    onDisposed: nil) // complete시 액션 지정 가능
 
 // rangeObserver
 let rangeObserver = Observable<Int64>.range(start: 1, count: 4)  // Type지정 예
