@@ -3,7 +3,7 @@ import RxSwift
 
 func subject() {
     
-    let publish = PublishSubject<Int>()
+    let publish = PublishSubject<Int>()  // 구독시점부터 서브젝트 구독. 이전 서브젝트는 무시.
     
     publish.on(.next(1)) // 퍼블리쉬 만으로는 실행 반응 없음. "구독자" 있어야함
     

@@ -14,6 +14,7 @@
 		AF197DAC222D367F00794D97 /* RxSwiftTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF197DAA222D367F00794D97 /* RxSwiftTest.xcdatamodeld */; };
 		AF197DAE222D368200794D97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF197DAD222D368200794D97 /* Assets.xcassets */; };
 		AF197DB1222D368200794D97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF197DAF222D368200794D97 /* LaunchScreen.storyboard */; };
+		AF5D0610223A59E5004D2681 /* LoginPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D060F223A59E5004D2681 /* LoginPracticeViewController.swift */; };
 		AF5E5EC52238139500C038D3 /* SubjectInPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E5EC42238139500C038D3 /* SubjectInPracticeViewController.swift */; };
 		AFFE219722394BD200553BFD /* ImageLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE219622394BD200553BFD /* ImageLoaderViewController.swift */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,9 @@
 		AF26165522353A56008F292C /* 10. Replay Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "10. Replay Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF2BB8882230420F00608094 /* 6. Side Effects.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "6. Side Effects.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF2BB8892231146C00608094 /* 7. Traits.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "7. Traits.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF5D060D223A4C26004D2681 /* 15. Skip Operator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "15. Skip Operator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF5D060E223A51E5004D2681 /* 16. Take Operator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "16. Take Operator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF5D060F223A59E5004D2681 /* LoginPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPracticeViewController.swift; sourceTree = "<group>"; };
 		AF5E5E752236ACA200C038D3 /* 11. Async Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "11. Async Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF5E5EC22237EF2200C038D3 /* 12. Relay.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "12. Relay.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF5E5EC42238139500C038D3 /* SubjectInPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectInPracticeViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 		AF197DA2222D367F00794D97 /* RxSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				AF5D060E223A51E5004D2681 /* 16. Take Operator.playground */,
+				AF5D060D223A4C26004D2681 /* 15. Skip Operator.playground */,
 				AFFE219522393D7F00553BFD /* 14. Ignore Operator.playground */,
 				AF5E5EC22237EF2200C038D3 /* 12. Relay.playground */,
 				AF5E5E752236ACA200C038D3 /* 11. Async Subject.playground */,
@@ -111,6 +117,7 @@
 				AF197DA5222D367F00794D97 /* ViewController.swift */,
 				AF5E5EC42238139500C038D3 /* SubjectInPracticeViewController.swift */,
 				AFFE219622394BD200553BFD /* ImageLoaderViewController.swift */,
+				AF5D060F223A59E5004D2681 /* LoginPracticeViewController.swift */,
 				AF197DAD222D368200794D97 /* Assets.xcassets */,
 				AF197DAF222D368200794D97 /* LaunchScreen.storyboard */,
 				AF197DB2222D368200794D97 /* Info.plist */,
@@ -244,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF197DA6222D367F00794D97 /* ViewController.swift in Sources */,
+				AF5D0610223A59E5004D2681 /* LoginPracticeViewController.swift in Sources */,
 				AF5E5EC52238139500C038D3 /* SubjectInPracticeViewController.swift in Sources */,
 				AF197DA4222D367F00794D97 /* AppDelegate.swift in Sources */,
 				AF197DAC222D367F00794D97 /* RxSwiftTest.xcdatamodeld in Sources */,

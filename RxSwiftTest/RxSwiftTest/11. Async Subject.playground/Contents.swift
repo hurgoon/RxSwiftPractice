@@ -8,7 +8,7 @@ enum SomeError: Error {
 func async() {
     
     let index = AsyncSubject<Int>() // completed가 필요하며, 마지막 밸류만 발행된다
-    
+                                    // 정정 : 컴플리트가 될 때(필수), 마지막 서브젝트만 구독 된다
     index.onNext(0)
     
     let bag = DisposeBag()
