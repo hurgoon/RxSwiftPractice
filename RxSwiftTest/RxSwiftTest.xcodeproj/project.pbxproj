@@ -42,6 +42,7 @@
 		AF5E5E752236ACA200C038D3 /* 11. Async Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "11. Async Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF5E5EC22237EF2200C038D3 /* 12. Relay.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "12. Relay.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF5E5EC42238139500C038D3 /* SubjectInPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectInPracticeViewController.swift; sourceTree = "<group>"; };
+		AFEAE143223BC348009B3F4F /* 17. Distinct Operator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "17. Distinct Operator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AFEF3DDB2232B5E200D37592 /* 8. Publish Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "8. Publish Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AFFE219522393D7F00553BFD /* 14. Ignore Operator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "14. Ignore Operator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AFFE219622394BD200553BFD /* ImageLoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 		AF197DA2222D367F00794D97 /* RxSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				AFEAE143223BC348009B3F4F /* 17. Distinct Operator.playground */,
 				AF5D060E223A51E5004D2681 /* 16. Take Operator.playground */,
 				AF5D060D223A4C26004D2681 /* 15. Skip Operator.playground */,
 				AFFE219522393D7F00553BFD /* 14. Ignore Operator.playground */,
