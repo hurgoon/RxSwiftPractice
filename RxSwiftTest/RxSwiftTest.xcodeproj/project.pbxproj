@@ -24,6 +24,8 @@
 		AF095DD9223401FF00584545 /* 9. Behavior Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "9. Behavior Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF0C9BA4223033D200232903 /* 5. Disposing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "5. Disposing.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF0C9BA622303F9600232903 /* 3. Observable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "3. Observable.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF18AFC6223D4018006CE722 /* 18. Share Operator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "18. Share Operator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF18AFC7223D4583006CE722 /* 19. Ignore in Practice.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "19. Ignore in Practice.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF197DA0222D367F00794D97 /* RxSwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF197DA3222D367F00794D97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF197DA5222D367F00794D97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,8 @@
 		AF197DA2222D367F00794D97 /* RxSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				AF18AFC7223D4583006CE722 /* 19. Ignore in Practice.playground */,
+				AF18AFC6223D4018006CE722 /* 18. Share Operator.playground */,
 				AFEAE143223BC348009B3F4F /* 17. Distinct Operator.playground */,
 				AF5D060E223A51E5004D2681 /* 16. Take Operator.playground */,
 				AF5D060D223A4C26004D2681 /* 15. Skip Operator.playground */,
