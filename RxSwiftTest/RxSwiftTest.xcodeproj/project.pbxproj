@@ -44,6 +44,7 @@
 		AF5E5E752236ACA200C038D3 /* 11. Async Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "11. Async Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF5E5EC22237EF2200C038D3 /* 12. Relay.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "12. Relay.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF5E5EC42238139500C038D3 /* SubjectInPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectInPracticeViewController.swift; sourceTree = "<group>"; };
+		AF9B6218223E93D800D33E58 /* 20. Map Operator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "20. Map Operator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AFEAE143223BC348009B3F4F /* 17. Distinct Operator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "17. Distinct Operator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AFEF3DDB2232B5E200D37592 /* 8. Publish Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "8. Publish Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AFFE219522393D7F00553BFD /* 14. Ignore Operator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "14. Ignore Operator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -102,6 +103,7 @@
 		AF197DA2222D367F00794D97 /* RxSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				AF9B6218223E93D800D33E58 /* 20. Map Operator.playground */,
 				AF18AFC7223D4583006CE722 /* 19. Ignore in Practice.playground */,
 				AF18AFC6223D4018006CE722 /* 18. Share Operator.playground */,
 				AFEAE143223BC348009B3F4F /* 17. Distinct Operator.playground */,
