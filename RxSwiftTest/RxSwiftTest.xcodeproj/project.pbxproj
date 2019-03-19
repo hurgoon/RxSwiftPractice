@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6EA369A9FDFB309E6CC7ED84 /* Pods_RxSwiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC511C6D31A9B472644C552E /* Pods_RxSwiftTest.framework */; };
+		AF160701224156FC00289AEA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF160700224156FC00289AEA /* TableViewController.swift */; };
+		AF1607032241574400289AEA /* RepoEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1607022241574400289AEA /* RepoEvent.swift */; };
+		AF1607052241575500289AEA /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1607042241575500289AEA /* ImageCache.swift */; };
 		AF197DA4222D367F00794D97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF197DA3222D367F00794D97 /* AppDelegate.swift */; };
 		AF197DA6222D367F00794D97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF197DA5222D367F00794D97 /* ViewController.swift */; };
 		AF197DA9222D367F00794D97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF197DA7222D367F00794D97 /* Main.storyboard */; };
@@ -24,6 +27,9 @@
 		AF095DD9223401FF00584545 /* 9. Behavior Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "9. Behavior Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF0C9BA4223033D200232903 /* 5. Disposing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "5. Disposing.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF0C9BA622303F9600232903 /* 3. Observable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "3. Observable.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF160700224156FC00289AEA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		AF1607022241574400289AEA /* RepoEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoEvent.swift; sourceTree = "<group>"; };
+		AF1607042241575500289AEA /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		AF18AFC6223D4018006CE722 /* 18. Share Operator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "18. Share Operator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF18AFC7223D4583006CE722 /* 19. Ignore in Practice.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "19. Ignore in Practice.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF197DA0222D367F00794D97 /* RxSwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,25 +90,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		AF197D97222D367F00794D97 = {
+		AF1606FE2241539400289AEA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AF197DA2222D367F00794D97 /* RxSwiftTest */,
-				AF197DA1222D367F00794D97 /* Products */,
-				05CCDEAF12814942926E1F0B /* Pods */,
-				82B36667130DCB6D6FE6CA34 /* Frameworks */,
+				AF197DA5222D367F00794D97 /* ViewController.swift */,
+				AF5E5EC42238139500C038D3 /* SubjectInPracticeViewController.swift */,
+				AFFE219622394BD200553BFD /* ImageLoaderViewController.swift */,
+				AF5D060F223A59E5004D2681 /* LoginPracticeViewController.swift */,
+				AF160700224156FC00289AEA /* TableViewController.swift */,
+				AF1607022241574400289AEA /* RepoEvent.swift */,
+				AF1607042241575500289AEA /* ImageCache.swift */,
 			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		AF197DA1222D367F00794D97 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AF197DA0222D367F00794D97 /* RxSwiftTest.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AF197DA2222D367F00794D97 /* RxSwiftTest */ = {
+		AF1606FF224153C500289AEA /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
 				AF49AFB3223FE2FE00082233 /* 22. Materialize.playground */,
@@ -124,12 +126,35 @@
 				AF0C9BA4223033D200232903 /* 5. Disposing.playground */,
 				AF197DB8222D39AF00794D97 /* 4. Subscriber.playground */,
 				AF0C9BA622303F9600232903 /* 3. Observable.playground */,
+			);
+			path = Playgrounds;
+			sourceTree = "<group>";
+		};
+		AF197D97222D367F00794D97 = {
+			isa = PBXGroup;
+			children = (
+				AF197DA2222D367F00794D97 /* RxSwiftTest */,
+				AF197DA1222D367F00794D97 /* Products */,
+				05CCDEAF12814942926E1F0B /* Pods */,
+				82B36667130DCB6D6FE6CA34 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF197DA1222D367F00794D97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF197DA0222D367F00794D97 /* RxSwiftTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF197DA2222D367F00794D97 /* RxSwiftTest */ = {
+			isa = PBXGroup;
+			children = (
+				AF1606FF224153C500289AEA /* Playgrounds */,
+				AF1606FE2241539400289AEA /* Controller */,
 				AF197DA3222D367F00794D97 /* AppDelegate.swift */,
 				AF197DA7222D367F00794D97 /* Main.storyboard */,
-				AF197DA5222D367F00794D97 /* ViewController.swift */,
-				AF5E5EC42238139500C038D3 /* SubjectInPracticeViewController.swift */,
-				AFFE219622394BD200553BFD /* ImageLoaderViewController.swift */,
-				AF5D060F223A59E5004D2681 /* LoginPracticeViewController.swift */,
 				AF197DAD222D368200794D97 /* Assets.xcassets */,
 				AF197DAF222D368200794D97 /* LaunchScreen.storyboard */,
 				AF197DB2222D368200794D97 /* Info.plist */,
@@ -215,10 +240,11 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -227,10 +253,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		99FDD6FAB9D74C175FE47B6A /* [CP] Check Pods Manifest.lock */ = {
@@ -263,6 +290,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF197DA6222D367F00794D97 /* ViewController.swift in Sources */,
+				AF160701224156FC00289AEA /* TableViewController.swift in Sources */,
+				AF1607032241574400289AEA /* RepoEvent.swift in Sources */,
+				AF1607052241575500289AEA /* ImageCache.swift in Sources */,
 				AF5D0610223A59E5004D2681 /* LoginPracticeViewController.swift in Sources */,
 				AF5E5EC52238139500C038D3 /* SubjectInPracticeViewController.swift in Sources */,
 				AF197DA4222D367F00794D97 /* AppDelegate.swift in Sources */,
