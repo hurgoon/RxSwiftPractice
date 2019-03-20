@@ -19,6 +19,10 @@
 		AF197DB1222D368200794D97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF197DAF222D368200794D97 /* LaunchScreen.storyboard */; };
 		AF5D0610223A59E5004D2681 /* LoginPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D060F223A59E5004D2681 /* LoginPracticeViewController.swift */; };
 		AF5E5EC52238139500C038D3 /* SubjectInPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5E5EC42238139500C038D3 /* SubjectInPracticeViewController.swift */; };
+		AFA2AB1C224269A900D11439 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFA2AB1A224269A900D11439 /* Model.xcdatamodeld */; };
+		AFA2AB1F22426B6100D11439 /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2AB1D22426B6100D11439 /* Event+CoreDataClass.swift */; };
+		AFA2AB2022426B6100D11439 /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2AB1E22426B6100D11439 /* Event+CoreDataProperties.swift */; };
+		AFA2AB2222426CA400D11439 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2AB2122426CA400D11439 /* CoreDataStack.swift */; };
 		AFFE219722394BD200553BFD /* ImageLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE219622394BD200553BFD /* ImageLoaderViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +57,10 @@
 		AF5E5EC42238139500C038D3 /* SubjectInPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectInPracticeViewController.swift; sourceTree = "<group>"; };
 		AF711B70223FD669005D25E5 /* 21. Flatmap Operator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "21. Flatmap Operator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF9B6218223E93D800D33E58 /* 20. Map Operator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "20. Map Operator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AFA2AB1B224269A900D11439 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		AFA2AB1D22426B6100D11439 /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AFA2AB1E22426B6100D11439 /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AFA2AB2122426CA400D11439 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		AFEAE143223BC348009B3F4F /* 17. Distinct Operator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "17. Distinct Operator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AFEF3DDB2232B5E200D37592 /* 8. Publish Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "8. Publish Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AFFE219522393D7F00553BFD /* 14. Ignore Operator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "14. Ignore Operator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -99,7 +107,6 @@
 				AF5D060F223A59E5004D2681 /* LoginPracticeViewController.swift */,
 				AF160700224156FC00289AEA /* TableViewController.swift */,
 				AF1607022241574400289AEA /* RepoEvent.swift */,
-				AF1607042241575500289AEA /* ImageCache.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -151,6 +158,7 @@
 		AF197DA2222D367F00794D97 /* RxSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				AFA2AB192242695D00D11439 /* Local Cashe */,
 				AF1606FF224153C500289AEA /* Playgrounds */,
 				AF1606FE2241539400289AEA /* Controller */,
 				AF197DA3222D367F00794D97 /* AppDelegate.swift */,
@@ -161,6 +169,18 @@
 				AF197DAA222D367F00794D97 /* RxSwiftTest.xcdatamodeld */,
 			);
 			path = RxSwiftTest;
+			sourceTree = "<group>";
+		};
+		AFA2AB192242695D00D11439 /* Local Cashe */ = {
+			isa = PBXGroup;
+			children = (
+				AFA2AB1D22426B6100D11439 /* Event+CoreDataClass.swift */,
+				AFA2AB1E22426B6100D11439 /* Event+CoreDataProperties.swift */,
+				AF1607042241575500289AEA /* ImageCache.swift */,
+				AFA2AB1A224269A900D11439 /* Model.xcdatamodeld */,
+				AFA2AB2122426CA400D11439 /* CoreDataStack.swift */,
+			);
+			path = "Local Cashe";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +315,11 @@
 				AF1607052241575500289AEA /* ImageCache.swift in Sources */,
 				AF5D0610223A59E5004D2681 /* LoginPracticeViewController.swift in Sources */,
 				AF5E5EC52238139500C038D3 /* SubjectInPracticeViewController.swift in Sources */,
+				AFA2AB2222426CA400D11439 /* CoreDataStack.swift in Sources */,
+				AFA2AB2022426B6100D11439 /* Event+CoreDataProperties.swift in Sources */,
 				AF197DA4222D367F00794D97 /* AppDelegate.swift in Sources */,
+				AFA2AB1C224269A900D11439 /* Model.xcdatamodeld in Sources */,
+				AFA2AB1F22426B6100D11439 /* Event+CoreDataClass.swift in Sources */,
 				AF197DAC222D367F00794D97 /* RxSwiftTest.xcdatamodeld in Sources */,
 				AFFE219722394BD200553BFD /* ImageLoaderViewController.swift in Sources */,
 			);
@@ -508,6 +532,16 @@
 			);
 			currentVersion = AF197DAB222D367F00794D97 /* RxSwiftTest.xcdatamodel */;
 			path = RxSwiftTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		AFA2AB1A224269A900D11439 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AFA2AB1B224269A900D11439 /* Model.xcdatamodel */,
+			);
+			currentVersion = AFA2AB1B224269A900D11439 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
