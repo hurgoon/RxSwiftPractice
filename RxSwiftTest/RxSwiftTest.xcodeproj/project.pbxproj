@@ -61,6 +61,8 @@
 		AFA2AB1D22426B6100D11439 /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AFA2AB1E22426B6100D11439 /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AFA2AB2122426CA400D11439 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		AFB9D93E2243BA5F00B4F1BD /* 25. Concat.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "25. Concat.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AFB9D93F2243D17F00B4F1BD /* 26. Merge.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "26. Merge.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AFEAE143223BC348009B3F4F /* 17. Distinct Operator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "17. Distinct Operator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AFEF3DDB2232B5E200D37592 /* 8. Publish Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "8. Publish Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AFFE219522393D7F00553BFD /* 14. Ignore Operator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "14. Ignore Operator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -114,6 +116,8 @@
 		AF1606FF224153C500289AEA /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				AFB9D93F2243D17F00B4F1BD /* 26. Merge.playground */,
+				AFB9D93E2243BA5F00B4F1BD /* 25. Concat.playground */,
 				AF49AFB3223FE2FE00082233 /* 22. Materialize.playground */,
 				AF711B70223FD669005D25E5 /* 21. Flatmap Operator.playground */,
 				AF9B6218223E93D800D33E58 /* 20. Map Operator.playground */,
@@ -158,8 +162,8 @@
 		AF197DA2222D367F00794D97 /* RxSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
-				AFA2AB192242695D00D11439 /* Local Cashe */,
 				AF1606FF224153C500289AEA /* Playgrounds */,
+				AFA2AB192242695D00D11439 /* Local Cashe */,
 				AF1606FE2241539400289AEA /* Controller */,
 				AF197DA3222D367F00794D97 /* AppDelegate.swift */,
 				AF197DA7222D367F00794D97 /* Main.storyboard */,
