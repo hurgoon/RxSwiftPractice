@@ -48,6 +48,7 @@
 		AF26165522353A56008F292C /* 10. Replay Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "10. Replay Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF2BB8882230420F00608094 /* 6. Side Effects.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "6. Side Effects.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF2BB8892231146C00608094 /* 7. Traits.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "7. Traits.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF498825224B88E800E6FEFC /* 27. Combine Latest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "27. Combine Latest.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF49AFB3223FE2FE00082233 /* 22. Materialize.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "22. Materialize.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF5D060D223A4C26004D2681 /* 15. Skip Operator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "15. Skip Operator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF5D060E223A51E5004D2681 /* 16. Take Operator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "16. Take Operator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -116,6 +117,7 @@
 		AF1606FF224153C500289AEA /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				AF498825224B88E800E6FEFC /* 27. Combine Latest.playground */,
 				AFB9D93F2243D17F00B4F1BD /* 26. Merge.playground */,
 				AFB9D93E2243BA5F00B4F1BD /* 25. Concat.playground */,
 				AF49AFB3223FE2FE00082233 /* 22. Materialize.playground */,
