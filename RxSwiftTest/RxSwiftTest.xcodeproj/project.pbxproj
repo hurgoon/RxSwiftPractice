@@ -46,6 +46,7 @@
 		AF197DB2222D368200794D97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF197DB8222D39AF00794D97 /* 4. Subscriber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "4. Subscriber.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF1B45DB224D262D00164A0D /* 29. Trigger.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "29. Trigger.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF1B45DC224D29F500164A0D /* 30. Ambiguous.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "30. Ambiguous.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF26165522353A56008F292C /* 10. Replay Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "10. Replay Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF2BB8882230420F00608094 /* 6. Side Effects.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "6. Side Effects.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF2BB8892231146C00608094 /* 7. Traits.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "7. Traits.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -119,6 +120,7 @@
 		AF1606FF224153C500289AEA /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				AF1B45DC224D29F500164A0D /* 30. Ambiguous.playground */,
 				AF1B45DB224D262D00164A0D /* 29. Trigger.playground */,
 				AF498826224B990000E6FEFC /* 28. Zip.playground */,
 				AF498825224B88E800E6FEFC /* 27. Combine Latest.playground */,
