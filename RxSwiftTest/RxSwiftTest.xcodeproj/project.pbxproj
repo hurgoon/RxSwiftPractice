@@ -23,6 +23,9 @@
 		AFA2AB1F22426B6100D11439 /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2AB1D22426B6100D11439 /* Event+CoreDataClass.swift */; };
 		AFA2AB2022426B6100D11439 /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2AB1E22426B6100D11439 /* Event+CoreDataProperties.swift */; };
 		AFA2AB2222426CA400D11439 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2AB2122426CA400D11439 /* CoreDataStack.swift */; };
+		AFA650B0224E7F920032A9BF /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA650AF224E7F920032A9BF /* CategoryTableViewController.swift */; };
+		AFA650B2224E801E0032A9BF /* EOCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA650B1224E801E0032A9BF /* EOCategory.swift */; };
+		AFA650B4224E81B00032A9BF /* EONET.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA650B3224E81B00032A9BF /* EONET.swift */; };
 		AFFE219722394BD200553BFD /* ImageLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE219622394BD200553BFD /* ImageLoaderViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,9 @@
 		AFA2AB1E22426B6100D11439 /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AFA2AB2122426CA400D11439 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		AFA650AC224E76530032A9BF /* 31. Reduce and Scan.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "31. Reduce and Scan.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AFA650AF224E7F920032A9BF /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		AFA650B1224E801E0032A9BF /* EOCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOCategory.swift; sourceTree = "<group>"; };
+		AFA650B3224E81B00032A9BF /* EONET.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EONET.swift; sourceTree = "<group>"; };
 		AFB9D93E2243BA5F00B4F1BD /* 25. Concat.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "25. Concat.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AFB9D93F2243D17F00B4F1BD /* 26. Merge.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "26. Merge.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AFEAE143223BC348009B3F4F /* 17. Distinct Operator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "17. Distinct Operator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -114,6 +120,7 @@
 				AF5D060F223A59E5004D2681 /* LoginPracticeViewController.swift */,
 				AF160700224156FC00289AEA /* TableViewController.swift */,
 				AF1607022241574400289AEA /* RepoEvent.swift */,
+				AFA650AF224E7F920032A9BF /* CategoryTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -175,6 +182,8 @@
 				AF1606FF224153C500289AEA /* Playgrounds */,
 				AFA2AB192242695D00D11439 /* Local Cashe */,
 				AF1606FE2241539400289AEA /* Controller */,
+				AFA650AD224E7F480032A9BF /* Model */,
+				AFA650AE224E7F530032A9BF /* Utilities */,
 				AF197DA3222D367F00794D97 /* AppDelegate.swift */,
 				AF197DA7222D367F00794D97 /* Main.storyboard */,
 				AF197DAD222D368200794D97 /* Assets.xcassets */,
@@ -195,6 +204,22 @@
 				AFA2AB2122426CA400D11439 /* CoreDataStack.swift */,
 			);
 			path = "Local Cashe";
+			sourceTree = "<group>";
+		};
+		AFA650AD224E7F480032A9BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AFA650B1224E801E0032A9BF /* EOCategory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFA650AE224E7F530032A9BF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AFA650B3224E81B00032A9BF /* EONET.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,18 +350,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF197DA6222D367F00794D97 /* ViewController.swift in Sources */,
+				AFA650B4224E81B00032A9BF /* EONET.swift in Sources */,
 				AF160701224156FC00289AEA /* TableViewController.swift in Sources */,
 				AF1607032241574400289AEA /* RepoEvent.swift in Sources */,
 				AF1607052241575500289AEA /* ImageCache.swift in Sources */,
 				AF5D0610223A59E5004D2681 /* LoginPracticeViewController.swift in Sources */,
 				AF5E5EC52238139500C038D3 /* SubjectInPracticeViewController.swift in Sources */,
 				AFA2AB2222426CA400D11439 /* CoreDataStack.swift in Sources */,
+				AFA650B0224E7F920032A9BF /* CategoryTableViewController.swift in Sources */,
 				AFA2AB2022426B6100D11439 /* Event+CoreDataProperties.swift in Sources */,
 				AF197DA4222D367F00794D97 /* AppDelegate.swift in Sources */,
 				AFA2AB1C224269A900D11439 /* Model.xcdatamodeld in Sources */,
 				AFA2AB1F22426B6100D11439 /* Event+CoreDataClass.swift in Sources */,
 				AF197DAC222D367F00794D97 /* RxSwiftTest.xcdatamodeld in Sources */,
 				AFFE219722394BD200553BFD /* ImageLoaderViewController.swift in Sources */,
+				AFA650B2224E801E0032A9BF /* EOCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
