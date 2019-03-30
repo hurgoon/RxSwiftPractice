@@ -26,6 +26,7 @@
 		AFA650B0224E7F920032A9BF /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA650AF224E7F920032A9BF /* CategoryTableViewController.swift */; };
 		AFA650B2224E801E0032A9BF /* EOCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA650B1224E801E0032A9BF /* EOCategory.swift */; };
 		AFA650B4224E81B00032A9BF /* EONET.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA650B3224E81B00032A9BF /* EONET.swift */; };
+		AFB429FB224FA9710032ED3D /* EOEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB429FA224FA9710032ED3D /* EOEvent.swift */; };
 		AFFE219722394BD200553BFD /* ImageLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE219622394BD200553BFD /* ImageLoaderViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		AFA650AF224E7F920032A9BF /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		AFA650B1224E801E0032A9BF /* EOCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOCategory.swift; sourceTree = "<group>"; };
 		AFA650B3224E81B00032A9BF /* EONET.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EONET.swift; sourceTree = "<group>"; };
+		AFB429FA224FA9710032ED3D /* EOEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOEvent.swift; sourceTree = "<group>"; };
 		AFB9D93E2243BA5F00B4F1BD /* 25. Concat.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "25. Concat.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AFB9D93F2243D17F00B4F1BD /* 26. Merge.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "26. Merge.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AFEAE143223BC348009B3F4F /* 17. Distinct Operator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "17. Distinct Operator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				AFA650B1224E801E0032A9BF /* EOCategory.swift */,
+				AFB429FA224FA9710032ED3D /* EOEvent.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				AFA650B4224E81B00032A9BF /* EONET.swift in Sources */,
 				AF160701224156FC00289AEA /* TableViewController.swift in Sources */,
 				AF1607032241574400289AEA /* RepoEvent.swift in Sources */,
+				AFB429FB224FA9710032ED3D /* EOEvent.swift in Sources */,
 				AF1607052241575500289AEA /* ImageCache.swift in Sources */,
 				AF5D0610223A59E5004D2681 /* LoginPracticeViewController.swift in Sources */,
 				AF5E5EC52238139500C038D3 /* SubjectInPracticeViewController.swift in Sources */,
