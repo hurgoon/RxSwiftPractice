@@ -46,5 +46,4 @@ class EONET {
         
         return Observable.of(openEvents, closedEvents).merge().scan([], accumulator: +)
     }
-    
 }

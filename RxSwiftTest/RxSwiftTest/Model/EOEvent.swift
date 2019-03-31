@@ -13,6 +13,7 @@ struct EventCategory: Decodable {
 }
 
 struct EOEvent: Decodable {
+    let title: String
     let categories: [EventCategory]
 }
 

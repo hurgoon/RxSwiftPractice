@@ -11,8 +11,9 @@ import RxSwift
 import RxCocoa
 
 class CategoryTableViewController: UITableViewController {
-
-    let relay = BehaviorRelay<[EOCategory]>(value: [])
+    
+    let categoryRelay = BehaviorRelay<[EOCategory]>(value: [])
+//    let relay = BehaviorRelay<[EOCategory]>(value: [])
     let bag = DisposeBag()
     
     lazy var activityIndicator: UIActivityIndicatorView = {
@@ -31,7 +32,7 @@ class CategoryTableViewController: UITableViewController {
         activityIndicator.startAnimating()
         tableView.tableFooterView = UIView()
         
-        relay.subscribe(onNext: { [weak self] (_) in
+        categoryRelay.subscribe(onNext: { [weak self] (_) in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
             }
@@ -47,7 +48,7 @@ class CategoryTableViewController: UITableViewController {
         let updatedCategories = Observable.combineLatest(eoCategories, eoEvents) { (categories, events) -> [EOCategory] in
             return categories.map({ (category) -> EOCategory in
                 var cat = category
-                cat.events = events.filter({ $0.categories.contains{ $0.id == category.id } })
+                cat.events = events.filter({ $0.categories.contains{ $0.id == category.id } }).sorted(by: { $0.title < $1.title })
                 return cat
             }).sorted(by: { $0.events.count > $1.events.count })
         }
@@ -56,7 +57,7 @@ class CategoryTableViewController: UITableViewController {
             DispatchQueue.main.async {
                 self?.activityIndicator.stopAnimating()
             }
-        }).bind(to: relay).disposed(by: bag)
+        }).bind(to: categoryRelay).disposed(by: bag)
         
         // Practice Part 1
 //        EONET.eoCategories.do(onCompleted: { [weak self] in  // eoCategories 일이 끝나면(파싱) 액티비티 인디케이터 스탑
@@ -73,18 +74,29 @@ class CategoryTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return relay.value.count
+        return categoryRelay.value.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath)
         
-        let category = relay.value[indexPath.row]
+        let category = categoryRelay.value[indexPath.row]
         cell.textLabel?.text = "\(category.title) (\(category.events.count))"
         cell.detailTextLabel?.text = category.description
         cell.detailTextLabel?.numberOfLines = 0
         cell.accessoryType = category.events.count > 0 ? .disclosureIndicator : .none
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toEvents" {
+            guard let eventTVC = segue.destination as? EventTableViewController, let indexPath = tableView.indexPathForSelectedRow else { return }
+            
+            let category = categoryRelay.value[indexPath.row]
+            
+            eventTVC.eventRelay.accept(category.events)
+            eventTVC.title = category.title
+        }
     }
 }
