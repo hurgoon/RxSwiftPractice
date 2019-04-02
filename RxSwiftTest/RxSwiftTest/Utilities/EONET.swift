@@ -24,8 +24,10 @@ class EONET {
             }.catchErrorJustReturn([]).share(replay: 1, scope: .forever)
     }()
     
-    fileprivate static func events(isOpen: Bool) -> Observable<[EOEvent]> {
-        guard var components = URLComponents(string: eventUrl) else { fatalError("Invalid Url") }
+    fileprivate static func events(isOpen: Bool, categoryID: Int) -> Observable<[EOEvent]> {
+//        guard var components = URLComponents(string: eventUrl) else { fatalError("Invalid Url") }
+        
+        guard let url = URL(string: categoryUrl)?.appendingPathComponent("\(categoryID)"), var components = URLComponents(url: url, resolvingAgainstBaseURL: true) else { fatalError("Invalid Url") }
         
         components.queryItems = [URLQueryItem(name: "days", value: "360"), URLQueryItem(name: "status", value: isOpen ? "open" : "closed")]
         
@@ -37,9 +39,9 @@ class EONET {
         }).catchErrorJustReturn([])
     }
     
-    static func events() -> Observable<[EOEvent]> {
-        let openEvents = events(isOpen: true)
-        let closedEvents = events(isOpen: false)
+    static func events(categoryID: Int) -> Observable<[EOEvent]> {
+        let openEvents = events(isOpen: true, categoryID: categoryID)
+        let closedEvents = events(isOpen: false, categoryID: categoryID)
         
 //        return openEvents.concat(closedEvents).reduce([], accumulator: +) 시간을 줄여보자...
 //        return Observable.of(openEvents, closedEvents).merge().reduce([], accumulator: +)

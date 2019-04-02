@@ -13,7 +13,7 @@ import RxCocoa
 class CategoryTableViewController: UITableViewController {
     
     let categoryRelay = BehaviorRelay<[EOCategory]>(value: [])
-//    let relay = BehaviorRelay<[EOCategory]>(value: [])
+    //    let relay = BehaviorRelay<[EOCategory]>(value: [])
     let bag = DisposeBag()
     
     lazy var activityIndicator: UIActivityIndicatorView = {
@@ -24,7 +24,7 @@ class CategoryTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         title = "All Categories"
         
         tableView.addSubview(activityIndicator)
@@ -40,17 +40,25 @@ class CategoryTableViewController: UITableViewController {
         
         startDownload()
     }
-
+    
     func startDownload() {
         // Practice Part 2
         let eoCategories = EONET.eoCategories
-        let eoEvents = EONET.events()
-        let updatedCategories = Observable.combineLatest(eoCategories, eoEvents) { (categories, events) -> [EOCategory] in
-            return categories.map({ (category) -> EOCategory in
-                var cat = category
-                cat.events = events.filter({ $0.categories.contains{ $0.id == category.id } }).sorted(by: { $0.title < $1.title })
-                return cat
-            }).sorted(by: { $0.events.count > $1.events.count })
+        //        let eoEvents = EONET.events()
+        //        let updatedCategories = Observable.combineLatest(eoCategories, eoEvents) { (categories, events) -> [EOCategory] in
+        //            return categories.map({ (category) -> EOCategory in
+        //                var cat = category
+        //                cat.events = events.filter({ $0.categories.contains{ $0.id == category.id } }).sorted(by: { $0.title < $1.title })
+        //                return cat
+        //            }).sorted(by: { $0.events.count > $1.events.count })
+        //        }
+        
+        let eventsPerCategory = eoCategories.flatMap { (categories) -> Observable<Observable<[EOEvent]>> in
+            return self.events(from: categories)
+            }.merge(maxConcurrent: 2)
+        
+        let updatedCategories = eoCategories.flatMap { (categories) -> Observable<[EOCategory]> in
+            return self.updateNCombine(categories: categories, with: eventsPerCategory)
         }
         
         eoCategories.concat(updatedCategories).do(onCompleted: { [weak self] in
@@ -60,23 +68,52 @@ class CategoryTableViewController: UITableViewController {
         }).bind(to: categoryRelay).disposed(by: bag)
         
         // Practice Part 1
-//        EONET.eoCategories.do(onCompleted: { [weak self] in  // eoCategories 일이 끝나면(파싱) 액티비티 인디케이터 스탑
-//            DispatchQueue.main.async {
-//                self?.activityIndicator.stopAnimating()
-//            }
-//        }).bind(to: relay).disposed(by: bag)
+        //        EONET.eoCategories.do(onCompleted: { [weak self] in  // eoCategories 일이 끝나면(파싱) 액티비티 인디케이터 스탑
+        //            DispatchQueue.main.async {
+        //                self?.activityIndicator.stopAnimating()
+        //            }
+        //        }).bind(to: relay).disposed(by: bag)
+    }
+    
+    func events(from categories: [EOCategory]) -> Observable<Observable<[EOEvent]>> {
+        let map = categories.map { (category) -> Observable<[EOEvent]> in
+            return EONET.events(categoryID: category.id)
+        }
+        return Observable.from(map)
+    }
+    
+    func updateNCombine(categories: [EOCategory], with events: Observable<[EOEvent]>) -> Observable<[EOCategory]> {
+        return events.scan(categories, accumulator: { (summery, next) -> [EOCategory] in
+            return self.update(categories: summery, with: next)
+        })
+    }
+    
+    func update(categories: [EOCategory], with events: [EOEvent]) -> [EOCategory] {
+        return categories.map({ (category) -> EOCategory in
+            
+            let newEvents = events.filter({ (event) -> Bool in
+                return event.categories.contains(where: { $0.id == category.id }) && !category.events.contains(where: { $0.id == event.id })
+            })
+            
+            guard !newEvents.isEmpty else { return category }
+            
+            var cat = category
+            cat.events += newEvents
+            
+            return cat
+        }).sorted(by: { $0.events.count > $1.events.count })
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return categoryRelay.value.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath)
         
