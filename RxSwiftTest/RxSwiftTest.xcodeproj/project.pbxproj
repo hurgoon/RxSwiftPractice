@@ -34,6 +34,7 @@
 /* Begin PBXFileReference section */
 		222E15E84641DF52C8BF63B2 /* Pods-RxSwiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftTest/Pods-RxSwiftTest.release.xcconfig"; sourceTree = "<group>"; };
 		AF095DD9223401FF00584545 /* 9. Behavior Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "9. Behavior Subject.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF0B813F2254FFF000AA5A83 /* 36. Replay.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "36. Replay.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF0C9BA4223033D200232903 /* 5. Disposing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "5. Disposing.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF0C9BA622303F9600232903 /* 3. Observable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "3. Observable.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF160700224156FC00289AEA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +134,7 @@
 		AF1606FF224153C500289AEA /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				AF0B813F2254FFF000AA5A83 /* 36. Replay.playground */,
 				AFA650AC224E76530032A9BF /* 31. Reduce and Scan.playground */,
 				AF1B45DC224D29F500164A0D /* 30. Ambiguous.playground */,
 				AF1B45DB224D262D00164A0D /* 29. Trigger.playground */,
