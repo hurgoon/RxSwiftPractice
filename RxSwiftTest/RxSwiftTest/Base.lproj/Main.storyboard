@@ -259,6 +259,7 @@
                         <segue destination="MpD-nP-oJh" kind="relationship" relationship="viewControllers" id="8az-vo-vdF"/>
                         <segue destination="L8T-Ix-srd" kind="relationship" relationship="viewControllers" id="igC-5O-BFz"/>
                         <segue destination="MKI-qN-G7R" kind="relationship" relationship="viewControllers" id="ufF-43-t87"/>
+                        <segue destination="nLT-Ep-34s" kind="relationship" relationship="viewControllers" id="Dgq-lH-h6F"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R18-7t-n4i" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -423,6 +424,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sgt-fg-Hjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="874" y="113"/>
+        </scene>
+        <!--Weather-->
+        <scene sceneID="yBz-Oa-D3C">
+            <objects>
+                <viewController id="nLT-Ep-34s" customClass="OpenWeatherMapViewController" customModule="RxSwiftTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eJh-xy-avt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0oS-qn-CBp">
+                                <rect key="frame" x="15" y="35" width="345" height="158.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8nP-Gd-V7U">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKK-ng-kqh">
+                                        <rect key="frame" x="0.0" y="38" width="345" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humidity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0N-Eb-yJK">
+                                        <rect key="frame" x="0.0" y="94" width="345" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9P8-qs-zM3">
+                                        <rect key="frame" x="0.0" y="122.5" width="345" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g1w-5J-UpY" firstAttribute="trailing" secondItem="0oS-qn-CBp" secondAttribute="trailing" constant="15" id="cfY-GX-XxV"/>
+                            <constraint firstItem="0oS-qn-CBp" firstAttribute="leading" secondItem="g1w-5J-UpY" secondAttribute="leading" constant="15" id="jqj-22-SGe"/>
+                            <constraint firstItem="0oS-qn-CBp" firstAttribute="top" secondItem="g1w-5J-UpY" secondAttribute="top" constant="15" id="nW1-1v-P3j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g1w-5J-UpY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Weather" id="ZNh-Bt-3jy"/>
+                    <connections>
+                        <outlet property="cityLbl" destination="9P8-qs-zM3" id="Aaw-86-Evs"/>
+                        <outlet property="humidityLbl" destination="A0N-Eb-yJK" id="aLv-TN-8u4"/>
+                        <outlet property="searchCityTxtFld" destination="8nP-Gd-V7U" id="flE-UX-CsM"/>
+                        <outlet property="tempLbl" destination="eKK-ng-kqh" id="UfQ-cx-WME"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NH4-PY-Xxn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-926" y="94"/>
         </scene>
         <!--Natural Event Tracker-->
         <scene sceneID="qTu-yD-gnh">

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6EA369A9FDFB309E6CC7ED84 /* Pods_RxSwiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC511C6D31A9B472644C552E /* Pods_RxSwiftTest.framework */; };
+		AF0B814722594FED00AA5A83 /* OpenWeatherMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0B814622594FED00AA5A83 /* OpenWeatherMapViewController.swift */; };
+		AF0B8149225951E700AA5A83 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0B8148225951E700AA5A83 /* Weather.swift */; };
+		AF0B814B2259521E00AA5A83 /* ApiNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0B814A2259521E00AA5A83 /* ApiNetworking.swift */; };
 		AF160701224156FC00289AEA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF160700224156FC00289AEA /* TableViewController.swift */; };
 		AF1607032241574400289AEA /* RepoEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1607022241574400289AEA /* RepoEvent.swift */; };
 		AF1607052241575500289AEA /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1607042241575500289AEA /* ImageCache.swift */; };
@@ -39,6 +42,9 @@
 		AF0B81412259334F00AA5A83 /* 38. Buffer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "38. Buffer.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF0B81422259355900AA5A83 /* 39. Window Buffer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "39. Window Buffer.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF0B814322593A1100AA5A83 /* 40. Timeout.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "40. Timeout.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF0B814622594FED00AA5A83 /* OpenWeatherMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapViewController.swift; sourceTree = "<group>"; };
+		AF0B8148225951E700AA5A83 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		AF0B814A2259521E00AA5A83 /* ApiNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNetworking.swift; sourceTree = "<group>"; };
 		AF0C9BA4223033D200232903 /* 5. Disposing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "5. Disposing.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF0C9BA622303F9600232903 /* 3. Observable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "3. Observable.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF160700224156FC00289AEA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +137,7 @@
 				AF1607022241574400289AEA /* RepoEvent.swift */,
 				AFA650AF224E7F920032A9BF /* CategoryTableViewController.swift */,
 				AFB42A3D22511A700032ED3D /* EventTableViewController.swift */,
+				AF0B814622594FED00AA5A83 /* OpenWeatherMapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -226,6 +233,7 @@
 			children = (
 				AFA650B1224E801E0032A9BF /* EOCategory.swift */,
 				AFB429FA224FA9710032ED3D /* EOEvent.swift */,
+				AF0B8148225951E700AA5A83 /* Weather.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -234,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				AFA650B3224E81B00032A9BF /* EONET.swift */,
+				AF0B814A2259521E00AA5A83 /* ApiNetworking.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -369,11 +378,14 @@
 				AFA650B4224E81B00032A9BF /* EONET.swift in Sources */,
 				AF160701224156FC00289AEA /* TableViewController.swift in Sources */,
 				AF1607032241574400289AEA /* RepoEvent.swift in Sources */,
+				AF0B8149225951E700AA5A83 /* Weather.swift in Sources */,
 				AFB429FB224FA9710032ED3D /* EOEvent.swift in Sources */,
+				AF0B814B2259521E00AA5A83 /* ApiNetworking.swift in Sources */,
 				AF1607052241575500289AEA /* ImageCache.swift in Sources */,
 				AF5D0610223A59E5004D2681 /* LoginPracticeViewController.swift in Sources */,
 				AF5E5EC52238139500C038D3 /* SubjectInPracticeViewController.swift in Sources */,
 				AFA2AB2222426CA400D11439 /* CoreDataStack.swift in Sources */,
+				AF0B814722594FED00AA5A83 /* OpenWeatherMapViewController.swift in Sources */,
 				AFA650B0224E7F920032A9BF /* CategoryTableViewController.swift in Sources */,
 				AFB42A3E22511A700032ED3D /* EventTableViewController.swift in Sources */,
 				AFA2AB2022426B6100D11439 /* Event+CoreDataProperties.swift in Sources */,
