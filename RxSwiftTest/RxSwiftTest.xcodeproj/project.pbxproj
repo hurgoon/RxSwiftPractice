@@ -38,6 +38,7 @@
 		AF0B81402257A1F000AA5A83 /* 37. Delay.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "37. Delay.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF0B81412259334F00AA5A83 /* 38. Buffer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "38. Buffer.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF0B81422259355900AA5A83 /* 39. Window Buffer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "39. Window Buffer.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AF0B814322593A1100AA5A83 /* 40. Timeout.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "40. Timeout.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF0C9BA4223033D200232903 /* 5. Disposing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "5. Disposing.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF0C9BA622303F9600232903 /* 3. Observable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "3. Observable.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF160700224156FC00289AEA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +138,7 @@
 		AF1606FF224153C500289AEA /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				AF0B814322593A1100AA5A83 /* 40. Timeout.playground */,
 				AF0B81422259355900AA5A83 /* 39. Window Buffer.playground */,
 				AF0B81412259334F00AA5A83 /* 38. Buffer.playground */,
 				AF0B81402257A1F000AA5A83 /* 37. Delay.playground */,
