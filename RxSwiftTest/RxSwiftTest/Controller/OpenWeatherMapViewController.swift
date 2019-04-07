@@ -42,26 +42,71 @@ class OpenWeatherMapViewController: UIViewController {
         
         
         // 42. Label and TableView
-        let search = searchCityTxtFld.rx.text
-            .throttle(1, scheduler: MainScheduler.instance)
+//        let search = searchCityTxtFld.rx.text
+//            .throttle(1, scheduler: MainScheduler.instance)
+//            .filter{ !($0 ?? "").isEmpty }
+//            .map( { $0 ?? "Error" })
+//            .flatMapLatest { (name) -> Observable<Weather> in
+//                return ApiNetworking.shared.currentWeather(for: name)
+//            }
+//            .share(replay: 1, scope: .whileConnected)
+//            .observeOn(MainScheduler.instance)
+//
+//        search.map({ "\($0.main.temp)도씨" })
+//            .bind(to: tempLbl.rx.text)
+//            .disposed(by: bag)
+//
+//        search.map({ "습도 : \($0.main.humidity)"})
+//            .bind(to: humidityLbl.rx.text)
+//            .disposed(by: bag)
+//
+//        search.map({ "\($0.name), \($0.sys.country)"})
+//            .bind(to: cityLbl.rx.text)
+//            .disposed(by: bag)
+        
+        // 43. Traits in RxCocoa (driver)
+//        let search = searchCityTxtFld.rx.text
+//            .throttle(1, scheduler: MainScheduler.instance)
+//            .filter{ !($0 ?? "").isEmpty }
+//            .map( { $0 ?? "Error" })
+//            .flatMapLatest { (name) -> Observable<Weather> in
+//                return ApiNetworking.shared.currentWeather(for: name)
+//            }
+//            .asDriver(onErrorJustReturn: Weather.empty)
+//
+//        search.map({ "\($0.main.temp)도씨" })
+//            .drive(tempLbl.rx.text)
+//            .disposed(by: bag)
+//
+//        search.map({ "습도 : \($0.main.humidity)%"})
+//            .drive(humidityLbl.rx.text)
+//            .disposed(by: bag)
+//
+//        search.map({ "\($0.name), \($0.sys.country)"})
+//            .drive(cityLbl.rx.text)
+//            .disposed(by: bag)
+        
+        // 43. Traits in RxCocoa (controlEvent) 서치 버튼 눌렀을 때만 네트워킹
+        let search = searchCityTxtFld.rx
+            .controlEvent(.editingDidEndOnExit)
+            .map({ self.searchCityTxtFld.text })
             .filter{ !($0 ?? "").isEmpty }
             .map( { $0 ?? "Error" })
-            .flatMapLatest { (name) -> Observable<Weather> in
+            .flatMap { (name) -> Observable<Weather> in // 어차피 서치 버튼에서만 작동하기 때문에 flatMapLatest는 무용
                 return ApiNetworking.shared.currentWeather(for: name)
-            }
-            .share(replay: 1, scope: .whileConnected)
-            .observeOn(MainScheduler.instance)
+            } 
+            .asDriver(onErrorJustReturn: Weather.empty)
         
         search.map({ "\($0.main.temp)도씨" })
-            .bind(to: tempLbl.rx.text)
+            .drive(tempLbl.rx.text)
             .disposed(by: bag)
         
-        search.map({ "습도 : \($0.main.humidity)"})
-            .bind(to: humidityLbl.rx.text)
+        search.map({ "습도 : \($0.main.humidity)%"})
+            .drive(humidityLbl.rx.text)
             .disposed(by: bag)
         
         search.map({ "\($0.name), \($0.sys.country)"})
-            .bind(to: cityLbl.rx.text)
+            .drive(cityLbl.rx.text)
             .disposed(by: bag)
     }
 }

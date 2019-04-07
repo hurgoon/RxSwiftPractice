@@ -15,7 +15,7 @@ class RxTableViewTestController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
     let bag = DisposeBag()
-    let observable = Observable.just(Array(1...9))
+    let observable = Observable.just(Array(1...30))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,5 +29,4 @@ class RxTableViewTestController: UIViewController {
         }.disposed(by: bag)
         
     }
-    
 }
