@@ -11,6 +11,7 @@
 		AF0B814722594FED00AA5A83 /* OpenWeatherMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0B814622594FED00AA5A83 /* OpenWeatherMapViewController.swift */; };
 		AF0B8149225951E700AA5A83 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0B8148225951E700AA5A83 /* Weather.swift */; };
 		AF0B814B2259521E00AA5A83 /* ApiNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0B814A2259521E00AA5A83 /* ApiNetworking.swift */; };
+		AF0B814D225AB79200AA5A83 /* RxTableViewTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0B814C225AB79200AA5A83 /* RxTableViewTestController.swift */; };
 		AF160701224156FC00289AEA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF160700224156FC00289AEA /* TableViewController.swift */; };
 		AF1607032241574400289AEA /* RepoEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1607022241574400289AEA /* RepoEvent.swift */; };
 		AF1607052241575500289AEA /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1607042241575500289AEA /* ImageCache.swift */; };
@@ -45,6 +46,7 @@
 		AF0B814622594FED00AA5A83 /* OpenWeatherMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapViewController.swift; sourceTree = "<group>"; };
 		AF0B8148225951E700AA5A83 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		AF0B814A2259521E00AA5A83 /* ApiNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNetworking.swift; sourceTree = "<group>"; };
+		AF0B814C225AB79200AA5A83 /* RxTableViewTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewTestController.swift; sourceTree = "<group>"; };
 		AF0C9BA4223033D200232903 /* 5. Disposing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "5. Disposing.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF0C9BA622303F9600232903 /* 3. Observable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "3. Observable.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AF160700224156FC00289AEA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				AFA650AF224E7F920032A9BF /* CategoryTableViewController.swift */,
 				AFB42A3D22511A700032ED3D /* EventTableViewController.swift */,
 				AF0B814622594FED00AA5A83 /* OpenWeatherMapViewController.swift */,
+				AF0B814C225AB79200AA5A83 /* RxTableViewTestController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				AF197DAC222D367F00794D97 /* RxSwiftTest.xcdatamodeld in Sources */,
 				AFFE219722394BD200553BFD /* ImageLoaderViewController.swift in Sources */,
 				AFA650B2224E801E0032A9BF /* EOCategory.swift in Sources */,
+				AF0B814D225AB79200AA5A83 /* RxTableViewTestController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
