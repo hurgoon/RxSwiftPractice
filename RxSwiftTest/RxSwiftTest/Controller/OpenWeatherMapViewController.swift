@@ -17,6 +17,7 @@ class OpenWeatherMapViewController: UIViewController {
     @IBOutlet weak var tempLbl: UILabel!
     @IBOutlet weak var humidityLbl: UILabel!
     @IBOutlet weak var cityLbl: UILabel!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     // Variables
     let bag = DisposeBag()
@@ -87,15 +88,60 @@ class OpenWeatherMapViewController: UIViewController {
 //            .disposed(by: bag)
         
         // 43. Traits in RxCocoa (controlEvent) 서치 버튼 눌렀을 때만 네트워킹
-        let search = searchCityTxtFld.rx
+//        let search = searchCityTxtFld.rx
+//            .controlEvent(.editingDidEndOnExit)
+//            .map({ self.searchCityTxtFld.text })
+//            .filter{ !($0 ?? "").isEmpty }
+//            .map( { $0 ?? "Error" })
+//            .flatMap { (name) -> Observable<Weather> in // 어차피 서치 버튼에서만 작동하기 때문에 flatMapLatest는 무용
+//                return ApiNetworking.shared.currentWeather(for: name)
+//            }
+//            .asDriver(onErrorJustReturn: Weather.empty)
+//
+//        search.map({ "\($0.main.temp)도씨" })
+//            .drive(tempLbl.rx.text)
+//            .disposed(by: bag)
+//
+//        search.map({ "습도 : \($0.main.humidity)%"})
+//            .drive(humidityLbl.rx.text)
+//            .disposed(by: bag)
+//
+//        search.map({ "\($0.name), \($0.sys.country)"})
+//            .drive(cityLbl.rx.text)
+//            .disposed(by: bag)
+        
+        // 44. ActivityIndicator
+        let searchInput = searchCityTxtFld.rx
             .controlEvent(.editingDidEndOnExit)
             .map({ self.searchCityTxtFld.text })
-            .filter{ !($0 ?? "").isEmpty }
-            .map( { $0 ?? "Error" })
-            .flatMap { (name) -> Observable<Weather> in // 어차피 서치 버튼에서만 작동하기 때문에 flatMapLatest는 무용
-                return ApiNetworking.shared.currentWeather(for: name)
-            } 
-            .asDriver(onErrorJustReturn: Weather.empty)
+            .filter({ !($0 ?? "").isEmpty })
+            .map({ $0 ?? "Error" })
+        
+        let search = searchInput.flatMap { (name) -> Observable<Weather> in
+            return ApiNetworking.shared.currentWeather(for: name)
+        }.asDriver(onErrorJustReturn: Weather.empty)
+        
+        let running = Observable.from([searchInput.map({ _ in true }), search.map({ _ in false }).asObservable()])
+            .merge()
+            .startWith(true)
+            .asDriver(onErrorJustReturn: false)
+        
+        running
+            .skip(1) // startWith(true)로 시작하기 때문에 스킵하지 않으면 activityIndicator가 작동되며 시작한다
+            .drive(activityIndicator.rx.isAnimating)
+            .disposed(by: bag)
+        
+        running
+            .drive(tempLbl.rx.isHidden)
+            .disposed(by: bag)
+        
+        running
+            .drive(humidityLbl.rx.isHidden)
+            .disposed(by: bag)
+        
+        running
+            .drive(cityLbl.rx.isHidden)
+            .disposed(by: bag)
         
         search.map({ "\($0.main.temp)도씨" })
             .drive(tempLbl.rx.text)

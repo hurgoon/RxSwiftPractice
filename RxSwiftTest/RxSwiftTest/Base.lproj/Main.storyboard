@@ -504,17 +504,23 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Zzo-mC-Hcs">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Zzo-mC-Hcs" firstAttribute="centerX" secondItem="eJh-xy-avt" secondAttribute="centerX" id="c5k-mB-YfR"/>
                             <constraint firstItem="g1w-5J-UpY" firstAttribute="trailing" secondItem="0oS-qn-CBp" secondAttribute="trailing" constant="15" id="cfY-GX-XxV"/>
                             <constraint firstItem="0oS-qn-CBp" firstAttribute="leading" secondItem="g1w-5J-UpY" secondAttribute="leading" constant="15" id="jqj-22-SGe"/>
                             <constraint firstItem="0oS-qn-CBp" firstAttribute="top" secondItem="g1w-5J-UpY" secondAttribute="top" constant="15" id="nW1-1v-P3j"/>
+                            <constraint firstItem="Zzo-mC-Hcs" firstAttribute="centerY" secondItem="eJh-xy-avt" secondAttribute="centerY" id="up2-VI-Xhu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g1w-5J-UpY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Weather" id="ZNh-Bt-3jy"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="Zzo-mC-Hcs" id="zoP-lm-ETv"/>
                         <outlet property="cityLbl" destination="9P8-qs-zM3" id="Aaw-86-Evs"/>
                         <outlet property="humidityLbl" destination="A0N-Eb-yJK" id="aLv-TN-8u4"/>
                         <outlet property="searchCityTxtFld" destination="8nP-Gd-V7U" id="flE-UX-CsM"/>
